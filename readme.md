@@ -16,7 +16,6 @@
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ## Features
 - 🖼️ Image-based ASL alphabet classification (A-Z + space/del/nothing)
@@ -30,7 +29,7 @@
 |-----------|---------|
 | **Terminal Success** | ![Terminal](./src/Terminal_Success.png) |
 | **Server Side** | ![Frontend](./src/Server.png) |
-| **IFront-end** | ![Upload](./src/Web_Success.png) |
+| **Front-end** | ![Upload](./src/Web_Success.png) |
 
 
 ## Installation
@@ -52,7 +51,7 @@ source venv/bin/activate
 #### Windows
 ```bash
 python -m venv venv
-.env\Scriptsctivate
+.venv\Scripts\activate
 ```
 
 ### 3. Install Dependencies
@@ -184,6 +183,4 @@ sign-language-classifier/
 - **Issue**: Cannot access webcam in the app  
   **Solution**: Make sure your browser has permission to access the webcam and that the camera is not being used by any other application.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
