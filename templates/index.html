@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASL Classifier</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Language Classifier</h1>
+        
+        <!-- File Upload -->
+        <div class="card">
+            <h2>Upload Image</h2>
+            <div class="drop-zone" id="dropZone">
+                <span class="drop-zone__prompt">
+                    <i class="fas fa-upload"></i><br>
+                    Drag & Drop or Click to Upload
+                </span>
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+            <div id="uploadResult"></div>
+        </div>
+
+        <!-- Webcam -->
+        <div class="card">
+            <h2>Real-Time Webcam</h2>
+            <video id="webcam" width="300" autoplay muted></video>
+            <button onclick="startWebcam()">Start Webcam</button>
+            <div id="webcamResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+     
+</body>
+</html>
